@@ -2,30 +2,32 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Share Tech Mono', monospace;
     box-sizing: border-box;
 }
 
-/* body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-} */
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar */
+.myNav {
+    padding: 10;
+    background: green;
+    position: sticky;
+    top: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
 nav {
     width: 100%;
     margin: 0;
     padding: 10px;
-    position: sticky;
-}
-
-.navbar-div {
-    background: green;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 nav ul {
     list-style: none;
-    text-align: right;
+    text-align: center;
 }
 
 nav ul li {
@@ -38,7 +40,7 @@ nav ul li a {
     text-decoration: none;
     color: #aaa;
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 10px;
 }
 
@@ -51,8 +53,6 @@ nav ul li a:before {
 nav ul li a:hover {
     color: #555;
 }
-
-
 
 /* Stroke effect navbar */
 nav.myNav ul li a,
@@ -103,9 +103,8 @@ nav.fill ul li a:hover:after {
 .container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     scroll-behavior: smooth;
-    overflow: auto;
     scroll-snap-type: y mandatory;
 }
 
@@ -114,6 +113,14 @@ nav.fill ul li a:hover:after {
     height: 100vh;
     background-size: cover;
     scroll-snap-align: start;
+}
+
+#intro-text {
+    text-align: center;
+    font-size: 4rem;
+    /* font-family: 'Share Tech Mono', monospace; */
+    font-family: 'Major Mono Display', monospace;
+    padding: 7% 0 0 0;
 }
 
 #about {
@@ -126,4 +133,13 @@ nav.fill ul li a:hover:after {
 
 #contact {
     background: yellow;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: red;
+    text-align: center;
 }
