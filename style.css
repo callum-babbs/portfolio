@@ -13,16 +13,17 @@ html {
 .myNav {
     padding: 10;
     background: #44475a;
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 90;
     font-family: 'Source Code Pro', monospace;
 }
 
 nav {
     width: 100%;
     margin: 0;
-    padding: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
 
 nav ul {
@@ -99,6 +100,7 @@ nav.fill ul li a:hover:after {
 }
 
 
+
 /* Sections */
 .container {
     position: relative;
@@ -120,58 +122,83 @@ nav.fill ul li a:hover:after {
 /* Intro block with name etc. */
 #intro {
     text-align: center;
+    background: #44475a;
+    height: 90vh;
+    position: relative;
 }
 
 #intro-text {
     /* font-family: 'Share Tech Mono', monospace; */
     /* font-family: 'Major Mono Display', monospace; */
-    padding-top: 6%;
+    padding-top: 12%;
     color: #f8f8f2;
-    padding-bottom: 40px;
 }
 
+/* 
 #intro-paragraphs {
     padding-top: 40px;
     color: #f8f8f2;
-}
+    word-wrap: break-word;
+    width: 420px;
+    margin: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    text-align: left;
+} */
 
 #name {
-    font-size: 5rem;
-    font-family: 'Major Mono Display', monospace;
-    padding-bottom: 50px;
-}
-
-#name-underline {
-    border-bottom: 1px solid #50fa7b;
-    padding-bottom: 20px;
+    font-size: 8rem;
+    font-family: "Josefin Sans", sans-serif;
+    padding-bottom: 100px;
+    font-weight: lighter;
 }
 
 #intro-subtext {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Source Code Pro', monospace;
+    word-wrap: break-word;
+    width: 450px;
+    margin: auto;
+    text-align: left;
 }
 
-#self-portrait {
-    width: 200px;
-    height: 200px;
+#logo {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
 }
+
 
 
 /* About me block */
 #about {
     text-align: center;
+    height: 120vh;
 }
 
 #about-title {
     font-size: 4rem;
-    font-family: 'Major Mono Display', monospace;
-    padding-top: 70px;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 80px;
     color: #f8f8f2;
 }
 
+.about-paragraphs {
+    padding-top: 40px;
+    color: #f8f8f2;
+    word-wrap: break-word;
+    width: 420px;
+    margin: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
 #about-title-underline {
-    border-bottom: 1px solid #50fa7b;
-    padding-bottom: 20px;
+    border-bottom: 2px solid #50fa7b;
+    padding-bottom: 15px;
 }
 
 
@@ -183,14 +210,14 @@ nav.fill ul li a:hover:after {
 
 #projects-title {
     font-size: 4rem;
-    font-family: 'Major Mono Display', monospace;
-    padding-top: 70px;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 80px;
     color: #f8f8f2;
 }
 
 #projects-title-underline {
-    border-bottom: 1px solid #50fa7b;
-    padding-bottom: 20px;
+    border-bottom: 2px solid #50fa7b;
+    padding-bottom: 15px;
 }
 
 
@@ -198,42 +225,125 @@ nav.fill ul li a:hover:after {
 /* Contact info block */
 #contact {
     text-align: center;
+    height: 50vh;
 }
 
 #contact-title {
-    font-size: 4rem;
-    font-family: 'Major Mono Display', monospace;
-    padding-top: 70px;
+    font-size: 2.5rem;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 40px;
     color: #f8f8f2;
 }
 
 #contact-title-underline {
-    border-bottom: 1px solid #50fa7b;
-    padding-bottom: 20px;
+    border-bottom: 2px solid #50fa7b;
+    padding-bottom: 15px;
+}
+
+#contact-list {
+    padding-top: 3%;
+}
+
+#email {
+    font-size: 1.1rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #f8f8f2;
+}
+
+.icon {
+    height: auto;
+    width: auto;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon:hover {
+    border: 2px solid #50fa7b;
+    padding: 3px;
+    background: #50fa7b;
 }
 
 
 
-/* Footer block with back to top button */
-
-#top-button {
-    width: 50px;
-    height: 50px;
-    filter: invert(1);
-}
-
+/* back to top button */
 #myBtn {
-    position: absolute; /* Fixed/sticky position */
+    position: fixed; /* Fixed/sticky position */
     bottom: 20px;
-    left: 50%;
+    right: 20px;
     z-index: 99; /* Make sure it does not overlap */
     border-color: #50fa7b;
     background-color: #44475a; /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 14px 10px 10px 10px; /* Some padding */
-    border-radius: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8f8f2;
+    display: none;
 }
 
 #myBtn:hover {
-    background-color: #50fa7b;
+    color:#50fa7b;
+}
+
+
+
+/* Waves */
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+
+/* Animation */
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
 }

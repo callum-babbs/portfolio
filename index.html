@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,34 +17,71 @@
     <div class="container">
         <nav class="myNav">
             <ul>
-                <li><a href="#intro">home</a></li>
                 <li><a href="#projects">my projects</a></li>
                 <li><a href="#about">about me</a></li>
                 <li><a href="#contact">contact</a></li>
-                <li><a href="#resume">resume</a></li>
+                <li><a href="#resume">> printResume();</a></li>
             </ul>
         </nav>
         <div class="section" id="intro">
             <hgroup id="intro-text">
-                <h1 id="name"><span id="name-underline">callum babbs</span></h1>
-                <h3 id="intro-subtext">Welcome to my personal web page</h3>
-            </hgroup> 
-            <img id="self-portrait" src="/assets/Callum Babbs-logos_white.png" alt="self-portrait">
-            <div id="intro-paragraphs">
-                <p>Some intro about me.</p>
-                <p>Some more info about me</p>
-            </div>
+                <h1 id="name">CALLUM BABBS</h1>
+                <h3 id="intro-subtext">Computer science major @ Saint Vincent College | Cybersecurity minor | Class of 2023 | Software developer | he/him</h3>
+            </hgroup>
+
+            <!--Waves Container-->
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(40, 42, 54,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(40, 42, 54,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(40, 42, 54,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#282a36" />
+                </g>
+            </svg>
+            <!--Waves end-->
         </div>
         <div class ="section" id="projects">
             <h2 id="projects-title"><span id="projects-title-underline">projects</span></h2>
         </div>
         <div class ="section" id="about">
             <h2 id="about-title"><span id="about-title-underline">about</span></h2>
+            <br>
+            <p class="about-paragraphs">My name is Callum Babbs and I am a fourth year student at Saint Vincent College majoring in Computer Science with a minor in Cybersecurity. 
+                I love video games and software engineering in any form, whether that be application software, system software, or web applications. 
+            </p>
+            <p class="about-paragraphs">
+                I am proficient in C++ and Python. My main tools for development include VS Code and Visual Studio. Additionally, I am comfortable with Git and using Github for source control.
+                Through my computer science senior project, I gained experience in agile development and being head of a development team. 
+            </p>
+            <p class="about-paragraphs">
+                I work well individually and as part of a team. Asking questions is not an issue for me, I won't hesitate to ask questions if I need any sort of clarification.
+                From a very young age I've always been coachable; I take directions well and embrace constructive criticism. Throughout my life I've grown to become 
+                a comfortable communicator with varying levels of management. One of my strongest traits is my work ethic, I was taught at a young age to not stop until
+                the job is done.
+            </p>
+            <p class="about-paragraphs">
+                My goal is to better my computer knowledge more and more everyday. I program daily and constantly work on
+                personal projects in addition to learning new technologies and languages. There is always more to learn in the constantly evolving world of technology, 
+                and I want to be at the front of that evolution.
+            </p>
         </div>
         <div class ="section" id="contact">
+            <img id="logo" src="/assets/logo.png" alt="CB logo">
             <h2 id="contact-title"><span id="contact-title-underline">contact</span></h2>
+            <div id="contact-list">
+                <h3 id="email">cpbabbs@gmail.com</h3>
+                <br>
+                <br>
+                <br>
+                <a href="https://github.com/callum-babbs" target="_blank" rel="noopener noreferrer"><img class="icon" src="/assets/github-logo.png" alt="github logo"></a>
+                <a href="https://www.linkedin.com/in/callumbabbs/" target="_blank" rel="noopener noreferrer"><img class="icon" src="/assets/linkedlin-logo.webp" alt="linkedin logo"></a>
+            </div>
         </div>
-        <button id="myBtn" title="Go to top"><img id="top-button" src="/assets/arrow up.png" alt="up-arrow"></button>
+        <button id="myBtn" title="Go to top">return;</button>
+        <script src="scripts.js"></script>
     </div>
 </body>
 </html>
