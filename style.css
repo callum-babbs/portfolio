@@ -20,10 +20,16 @@ a {
 .myNav {
     padding: 10;
     background: #44475a;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 90;
     font-family: 'Source Code Pro', monospace;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        font-size: 10px;
+    }
 }
 
 nav {
@@ -120,7 +126,7 @@ nav.fill ul li a:hover:after {
 
 .section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     scroll-snap-align: start;
 }
@@ -137,36 +143,27 @@ nav.fill ul li a:hover:after {
 #intro-text {
     /* font-family: 'Share Tech Mono', monospace; */
     /* font-family: 'Major Mono Display', monospace; */
-    padding-top: 12%;
+    padding-top: 7.5%;
     color: #f8f8f2;
 }
 
-/* 
-#intro-paragraphs {
-    padding-top: 40px;
-    color: #f8f8f2;
-    word-wrap: break-word;
-    width: 420px;
-    margin: auto;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
-    text-align: left;
-} */
+
 
 #name {
-    font-size: 8rem;
+    font-size: 9vmax;
     font-family: "Josefin Sans", sans-serif;
-    padding-bottom: 100px;
+    padding-bottom: 2%;
     font-weight: lighter;
+    margin: auto;
 }
 
 #intro-subtext {
-    font-size: 1.2rem;
+    font-size: 2.6vmin;
     font-family: 'Source Code Pro', monospace;
     word-wrap: break-word;
-    width: 450px;
+    width: 60vmin;
     margin: auto;
-    text-align: left;
+    text-align: justify;
 }
 
 #logo {
@@ -174,6 +171,8 @@ nav.fill ul li a:hover:after {
     width: auto;
     max-width: 150px;
     max-height: 150px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 
@@ -181,7 +180,8 @@ nav.fill ul li a:hover:after {
 /* About me block */
 #about {
     text-align: center;
-    height: 120vh;
+    height: 120%;
+    padding-bottom: 5%;
 }
 
 #about-title {
@@ -195,11 +195,11 @@ nav.fill ul li a:hover:after {
     padding-top: 40px;
     color: #f8f8f2;
     word-wrap: break-word;
-    width: 420px;
+    width: 350px;
     margin: auto;
     font-family: 'Source Code Pro', monospace;
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
     padding-bottom: 10px;
 }
 
@@ -213,12 +213,13 @@ nav.fill ul li a:hover:after {
 /* Projects block */
 #projects {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 #projects-title {
     font-size: 4rem;
     font-family: 'Source Code Pro', monospace;
-    padding-top: 80px;
+    padding-top: 5%;
     color: #f8f8f2;
 }
 
@@ -228,7 +229,7 @@ nav.fill ul li a:hover:after {
 }
 
 .project-blocks {
-    padding-top: 5%;
+    padding-top: 7%;
 }
 
 .projects-title {
@@ -247,29 +248,32 @@ nav.fill ul li a:hover:after {
 /* Contact info block */
 #contact {
     text-align: center;
-    height: 50vh;
+    height: 70%;
+    padding-top: 3%;
 }
 
 #contact-title {
     font-size: 2.5rem;
     font-family: 'Source Code Pro', monospace;
-    padding-top: 40px;
+    padding-top: 5%;
     color: #f8f8f2;
 }
 
 #contact-title-underline {
     border-bottom: 2px solid #50fa7b;
-    padding-bottom: 15px;
+    padding-bottom: 0.5%;
 }
 
 #contact-list {
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #email {
     font-size: 1.1rem;
     font-family: 'Source Code Pro', monospace;
     color: #f8f8f2;
+    padding-top: 1%;
 }
 
 .icon {
