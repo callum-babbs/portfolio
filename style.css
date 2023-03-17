@@ -14,6 +14,17 @@ a {
     text-decoration: none;
 }
 
+/* Mobile Scaling */
+@media only screen and (max-width: 450px) {
+    nav {
+        display: none;
+    }
+
+    #myBtn {
+        visibility: hidden;
+    }
+
+}
 
 
 /* Navbar */
@@ -30,6 +41,20 @@ a {
     nav {
         font-size: 10px;
     }
+
+    #myBtn {
+        visibility: hidden;
+    }
+
+    #intro-subtext {
+        padding-top: 5%;
+    }
+
+    #projects-title {
+        padding-bottom: 7%;
+    }
+
+
 }
 
 nav {
@@ -166,13 +191,6 @@ nav.fill ul li a:hover:after {
     text-align: justify;
 }
 
-/* #logo {
-    height: 150;
-    width: 150;
-    padding-top: 3%;
-    padding-bottom: 3%;
-} */
-
 
 
 /* About me block */
@@ -241,13 +259,21 @@ nav.fill ul li a:hover:after {
     text-decoration: underline;
 }
 
+/* Logo block */
+#logo-section {
+    height: 30%;
+    text-align: center;
+}
 
+#logo {
+    width: 10%;
+    height: 10%;
+}
 
 /* Contact info block */
 #contact {
     text-align: center;
     height: 70%;
-    padding-top: 3%;
 }
 
 #contact-title {
